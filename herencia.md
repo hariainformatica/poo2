@@ -1,3 +1,4 @@
+## Ejercicio 1
 ```mermaid
 classDiagram
     note "Vehículos de Transporte"
@@ -11,3 +12,17 @@ classDiagram
 
 - intercity = Guagua
 - lanzaroteBus = Guagua
+
+## Ejercicio 2
+```mermaid
+classDiagram
+    note "Vehículo"
+    Vehículo <|-- Automovil
+    Automovil <|-- Camión
+    Vehículo <|-- Bicicleta
+    Bicicleta <|-- moto
+    
+    Vehículo : +int ruedas
+    Vehículo : +str color
+    Vehículo: +info()
+```
